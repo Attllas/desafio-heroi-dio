@@ -1,7 +1,7 @@
 def calcular_nivel(vitorias, derrotas):
     saldo_vitorias = vitorias - derrotas
     
-    if vitorias < 10:
+    if vitorias <= 10:
         nivel = "Ferro"
     elif 11 <= vitorias <= 20:
         nivel = "Bronze"
@@ -18,6 +18,7 @@ def calcular_nivel(vitorias, derrotas):
 
     return saldo_vitorias, nivel
 
+# Exemplo de uso
 vitorias = int(input("Digite o número de vitórias: "))
 derrotas = int(input("Digite o número de derrotas: "))
 
